@@ -16,4 +16,22 @@ public class Cachorro {
     public String pegar(){
         return "Bolinha";
     }
+    public String estadoDeEspirito;
+
+    public String interagir(String acao)
+    {
+        if(acao.equals("carinho"))
+        {
+            this.estadoDeEspirito="feliz";
+        }
+        else if(acao.equals("vai dormir"))
+        {
+            this.estadoDeEspirito="bravo";
+        }
+        else{
+            this.estadoDeEspirito="neutro";
+        }
+        return estadoDeEspirito;
+    }
+
 }
